@@ -21,7 +21,7 @@
 
 ## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://luissalas94.github.io/capstone-project-1/)
 
 ## Video Link 
 
