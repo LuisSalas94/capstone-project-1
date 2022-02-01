@@ -154,7 +154,7 @@ html::-webkit-scrollbar-thumb {
 
   /* ******************************** About Conference *************** */
   .about-conference {
-    height: 95vh;
+    height: 75vh;
   }
 
   .box-container {
@@ -331,6 +331,7 @@ html::-webkit-scrollbar-thumb {
     padding: 3rem 10rem;
     cursor: pointer;
     font-size: 2rem;
+    margin-top: 2.2rem;
     text-transform: capitalize;
   }
 
@@ -352,6 +353,7 @@ html::-webkit-scrollbar-thumb {
     height: 40vh;
     display: grid;
     place-items: center;
+    padding: 0 10%;
   }
 
   /* ******************** Footer ***************************** */
@@ -424,7 +426,7 @@ html::-webkit-scrollbar-thumb {
   /* ******************** Hero ***************************** */
   .hero {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     padding: 15rem 4%;
     align-items: flex-start;
     justify-content: center;
@@ -440,11 +442,11 @@ html::-webkit-scrollbar-thumb {
   }
 
   .hero .content h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .about-hero h2 {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
 
   .hero .content h2 {
@@ -457,13 +459,16 @@ html::-webkit-scrollbar-thumb {
   }
 
   .hero .content p {
-    width: 80%;
+    width: 85%;
+    text-align: center;
+    font-size: 1.8rem;
+    
   }
 
   /* ******************** Program ***************************** */
   .program {
     width: 100%;
-    height: 82vh;
+    height: 100vh;
   }
 
   .program .row .card {
@@ -507,6 +512,7 @@ html::-webkit-scrollbar-thumb {
     height: auto;
     padding: 4% 0;
     margin-top: 2rem;
+    
   }
 
   .partner ul li {
@@ -525,18 +531,18 @@ html::-webkit-scrollbar-thumb {
 
   /* ******************** About Hero ***************************** */
   .about-hero {
-    height: 65vh;
+    height: 75vh;
     width: 100%;
   }
 
   /* ******************** About Logo ***************************** */
   .about-logo {
-    height: 55vh;
+    height: 60vh;
   }
 
   /* ******************** About Conference ***************************** */
   .about-conference {
-    height: 80vh;
+    height: 90vh;
   }
 
   .footer.about {
