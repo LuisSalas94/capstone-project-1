@@ -1,0 +1,213 @@
+/* ******************************** About Hero *************************************** */
+
+.about-hero {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+		url(../images/bg-1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.hero-hello {
+	color: var(--orange);
+	font-size: 2.5rem;
+	padding-bottom: 2rem;
+	display: none;
+}
+
+.about-hero h1 {
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	font-size: 5rem;
+	color: var(--red);
+}
+
+.about-hero h1::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 1px;
+	background-color: var(--red);
+	margin: 1rem auto;
+}
+
+.about-hero p {
+	width: 50%;
+	border: 4px solid #f3f3f3;
+	box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+	border-radius: 0.3rem;
+	padding: 3rem 7rem;
+	background-color: var(--white);
+	line-height: 2;
+	font-size: 1.6rem;
+}
+
+.about-hero h2 {
+	font-size: 1.5rem;
+	color: var(--black);
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+}
+
+.about-hero address a {
+	color: var(--black-card);
+	text-decoration: underline;
+	font-size: 1.8rem;
+}
+
+/* ******************************** About Logo *************************************** */
+.about-logo {
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+}
+
+.about-logo p {
+	width: 40%;
+	font-size: 1.7rem;
+	color: var(--black);
+	line-height: 1.8;
+	text-align: center;
+}
+
+.about-logo-secondary {
+	width: 70%;
+	font-size: 1.8rem;
+	color: var(--black);
+	line-height: 1.8;
+	display: none;
+}
+
+.about-logo .logo {
+	margin-top: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #f3f3f3;
+	padding: 2rem 6rem;
+	border-radius: 0.3rem;
+	box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.about-logo .logo img {
+	width: 15rem;
+}
+
+.about-logo .logo span {
+	font-size: 2.8rem;
+	font-weight: 400;
+	color: var(--orange);
+	margin-left: 2rem;
+}
+
+/* ******************************** About Conference ********************************* */
+.about-conference {
+	border-top: 1.5px solid #f3f3f3;
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.about-conference h1 {
+	padding-top: 4.5rem;
+}
+
+.about-conference p {
+	font-size: 1.7rem;
+	color: var(--black);
+	margin-bottom: 2rem;
+	letter-spacing: 1px;
+	padding: 0 4%;
+}
+
+.box-container {
+	padding-top: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.box-container .box1 {
+	width: 45rem;
+	height: 30rem;
+	background: url(../images/conference-1.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.box-container .box2 {
+	cursor: pointer;
+	width: 45rem;
+	height: 30rem;
+	background: url(../images/conference-2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.box-container .box1 h1,
+.box-container .box2 h1 {
+	color: var(--white);
+	font-size: 2.5rem;
+	text-align: center;
+	position: relative;
+	bottom: 4rem;
+	z-index: 1000;
+}
+
+.box-container .box1 .color-overlay,
+.box-container .box2 .color-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: var(--red);
+	opacity: 0.6;
+}
+
+/* ******************************** About Footer ************************************* */
+.footer.about {
+	background-color: #2e2e2e;
+}
+
+.footer.about h1,
+.footer.about i,
+.footer.about h2,
+.footer.about p {
+	color: var(--white);
+}
+
+/* ******************************** About Conference ********************************* */
+.partner.about {
+	display: none;
+}
+
+.about-footer-secondary {
+	display: none;
+}

@@ -1,0 +1,35 @@
+.partner {
+	margin-top: 10rem;
+	width: 100%;
+	height: 25vh;
+	background-color: var(--black-bg);
+	padding: 3%;
+}
+
+.partner .heading {
+	padding: 3rem 0;
+	color: var(--gray2);
+}
+
+.partner ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10rem;
+}
+
+.partner ul li {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	cursor: pointer;
+	font-size: 2rem;
+	text-transform: capitalize;
+	color: var(--gray2);
+}
+
+.partner ul li i {
+	font-size: 8rem;
+	color: var(--white2);
+}
