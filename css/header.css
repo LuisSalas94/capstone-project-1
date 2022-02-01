@@ -1,0 +1,117 @@
+/* ************************** Header ********************************************/
+.header-one {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--black);
+  height: 4rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-one ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-one ul li {
+  color: var(--white);
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.header-one ul li:hover {
+  color: var(--orange);
+  transform: scale(1.1);
+}
+
+.header-two {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--white2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-two .icon {
+  display: none;
+}
+
+.header-two .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 10%;
+}
+
+.header-two .logo img {
+  width: 8rem;
+  animation: float 2s linear infinite;
+  margin-right: 0.2rem;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(1rem);
+  }
+}
+
+.header-two .logo span {
+  color: var(--orange);
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+.header-two .navbar {
+  padding-right: 8%;
+}
+
+.header-two .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-two .navbar ul li a {
+  margin: 0 4rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.header-two .navbar ul li a:hover {
+  transform: scale(1.1);
+}
+
+.header-two .navbar .active {
+  color: var(--orange);
+}
+
+.header-two .navbar .selected {
+  color: var(--orange);
+  border: 4px solid var(--orange);
+  padding: 0.9rem;
+}

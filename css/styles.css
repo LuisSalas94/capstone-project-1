@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --black: #3e3e3e;
+  --black2: #545454;
+  --black-card: #3c3f46;
+  --black-bg: #414246;
+  --red: #ec5242;
+  --orange: #f95d13;
+  --gray: #d3d3d3;
+  --gray2: #8f8f8f;
+  --white: #fbfbfb;
+  --white2: #fafafa;
+  --white-bg: #f8f8f8;
+  --white-bg2: #f2f2f2;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  transition: all 0.2s linear;
+  list-style: none;
+  text-decoration: none;
+}
+
+*::selection {
+  background: var(--orange);
+  color: var(--white);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+.padding {
+  padding: 0 10%;
+}
+
+.header-two #icon {
+  font-size: 3.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.heading {
+  padding: 2rem 0;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--black);
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: var(--orange);
+  margin: 0.9rem auto;
+}
+
+.join {
+  display: none;
+}
+
+.scroll {
+  position: fixed;
+  top: -120%;
+  right: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 4rem;
+  background: var(--red);
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+.scroll.active {
+  top: calc(100% - 12rem);
+}
+
+/* ******************************** Media Queries *************************************** */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 58%;
+    overflow-x: hidden;
+  }
+
+  /* ******************** Header ***************************** */
+  .header-one {
+    justify-content: flex-end;
+  }
+
+  .header-two .navbar ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  /* ******************** Program ***************************** */
+
+  .program {
+    height: 75vh;
+  }
+
+  .program .row {
+    gap: 4rem;
+  }
+
+  /* ******************** Speakers ***************************** */
+  .speakers {
+    height: 150vh;
+  }
+
+  .speakers .row {
+    grid-template-columns: 1fr;
+  }
+
+  .speakers .row .card {
+    width: 80%;
+  }
+
+  /* ******************** Partner ***************************** */
+  .partner {
+    height: auto;
+  }
+
+  /* ******************** About Hero ***************************** */
+  .about-hero {
+    height: 100vh;
+  }
+
+  /* ******************** About Logo ***************************** */
+  .about-logo {
+    height: 70vh;
+  }
+
+  /* ******************************** About Conference *************** */
+  .about-conference {
+    height: 95vh;
+  }
+
+  .box-container {
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+    overflow-x: hidden;
+  }
+
+  /* ******************** Header ***************************** */
+  .header-one {
+    display: none;
+  }
+
+  .header-two {
+    top: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .header-two.header-style {
+    background-color: #ecf0f1;
+  }
+
+  .header-two .logo {
+    display: none;
+  }
+
+  .header-two .icon {
+    display: block;
+    cursor: pointer;
+    font-size: 5rem;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-two .navbar {
+    position: fixed;
+    top: -120%;
+    width: 100%;
+    height: 100%;
+    background-color: #ecf0f1;
+  }
+
+  .header-two .navbar.nav-toggle {
+    top: 10rem;
+  }
+
+  .header-two .navbar .active {
+    color: var(--black);
+  }
+
+  .header-two .navbar .selected {
+    color: var(--black);
+    border: none;
+    padding: 0;
+  }
+
+  .header-two .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-two .navbar ul li {
+    width: 100%;
+    margin: 3rem 3%;
+  }
+
+  .header-two .navbar ul li a,
+  .header-two .navbar ul li a.active,
+  .header-two .navbar ul li a.selected {
+    color: var(--black-card);
+    font-size: 2.5rem;
+    border-left: 2px solid var(--gray);
+    padding-left: 0.5rem;
+    margin-left: 4.5rem;
+  }
+
+  .header-two .navbar ul li:hover {
+    transform: scale(1.1);
+    color: var(--black2);
+    border-left: 2px solid var(--white2);
+  }
+
+  /**************************************** Hero ********************************/
+  .hero {
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 15% 3%;
+    height: 40vh;
+    overflow-x: hidden;
+  }
+
+  .hero .content {
+    width: 100%;
+  }
+
+  .about-logo p {
+    display: none;
+  }
+
+  .about-hero p {
+    width: 80%;
+    padding: 2rem 3rem;
+  }
+
+  .about-hero h1::after {
+    display: none;
+  }
+
+  .hero .content p {
+    width: 85%;
+    margin-top: 3.5rem;
+  }
+
+  .hero .content h3 {
+    padding-top: 5.5rem;
+  }
+
+  .hero-hello {
+    display: block;
+  }
+
+  /**************************************** Program ********************************/
+
+  .program {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+    padding: 5rem 0;
+  }
+
+  .program .heading {
+    padding: 0;
+  }
+
+  .program .row .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 8rem;
+  }
+
+  .footer.about h2 {
+    color: var(--black);
+  }
+
+  .program .row .card h2 {
+    font-size: 2rem;
+  }
+
+  .program .row .card p {
+    width: 60%;
+    font-size: 2rem;
+  }
+
+  .program .whole {
+    display: none;
+  }
+
+  .program .join {
+    display: block;
+    color: var(--gray);
+    background-color: var(--red);
+    padding: 3rem 10rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  /* ******************** Speakers ***************************** */
+
+  .speakers {
+    height: 100%;
+    background-color: var(--white-bg);
+  }
+
+  .speakers .row {
+    grid-template-columns: 1fr;
+    background-color: var(--white-bg);
+  }
+
+  /* ******************** Partner ***************************** */
+  .partner {
+    padding-top: 5rem;
+    height: 40vh;
+    display: grid;
+    place-items: center;
+  }
+
+  /* ******************** Footer ***************************** */
+  .footer {
+    height: 25vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ******************** About Hero ***************************** */
+  .about-hero {
+    height: 60vh;
+  }
+
+  /* ******************** About Logo ***************************** */
+  .about-logo {
+    height: 50vh;
+  }
+
+  .about-logo .logo {
+    padding: 2rem 15rem;
+  }
+
+  .about-logo-secondary {
+    display: block;
+  }
+
+  /* ******************************** About Conference ********************************* */
+  .about-conference {
+    height: 80vh;
+  }
+
+  .box-container {
+    padding-top: 2.2rem;
+  }
+
+  /* ******************************** About Conference ********************************* */
+  .partner.about {
+    height: 40vh;
+    display: block;
+  }
+
+  /* ******************************** About Footer ********************************* */
+  .about-footer-primary {
+    display: none;
+  }
+
+  .footer.about {
+    background-color: var(--white);
+    height: 10vh;
+    flex-wrap: nowrap;
+  }
+
+  .footer.about h1,
+  .footer.about i {
+    color: var(--black);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 48%;
+  }
+
+  * {
+    overflow-x: hidden;
+  }
+
+  /* ******************** Hero ***************************** */
+  .hero {
+    width: 100%;
+    height: 30vh;
+    padding: 15rem 4%;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: hidden;
+  }
+
+  .hero .content {
+    width: 100%;
+  }
+
+  .about-hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero .content h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero .content h2 {
+    font-size: 1.7rem;
+  }
+
+  .about-hero p {
+    width: 75%;
+    padding: 1.5rem 4rem;
+  }
+
+  .hero .content p {
+    width: 80%;
+  }
+
+  /* ******************** Program ***************************** */
+  .program {
+    width: 100%;
+    height: 82vh;
+  }
+
+  .program .row .card {
+    width: 90%;
+  }
+
+  .footer .content-2 p {
+    display: none;
+    padding-top: 0;
+  }
+
+  .program .row .card p {
+    font-size: 1.7rem;
+  }
+
+  .program .join {
+    color: var(--gray);
+    background-color: var(--red);
+    padding: 2rem 6rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  /* ******************** Speakers ***************************** */
+
+  .speakers .row .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .speakers .row .card h2::after {
+    margin: 0.8rem auto;
+  }
+
+  /* ******************** Partnert ***************************** */
+  .partner {
+    display: grid;
+    place-items: center;
+    height: auto;
+    padding: 4% 0;
+    margin-top: 2rem;
+  }
+
+  .partner ul li {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* ******************** Footer ***************************** */
+
+  .footer {
+    height: 15vh;
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+
+  /* ******************** About Hero ***************************** */
+  .about-hero {
+    height: 65vh;
+    width: 100%;
+  }
+
+  /* ******************** About Logo ***************************** */
+  .about-logo {
+    height: 55vh;
+  }
+
+  /* ******************** About Conference ***************************** */
+  .about-conference {
+    height: 80vh;
+  }
+
+  .footer.about {
+    background-color: var(--white);
+    height: 15vh;
+    flex-direction: column;
+  }
+}
