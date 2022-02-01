@@ -353,7 +353,6 @@ html::-webkit-scrollbar-thumb {
     height: 40vh;
     display: grid;
     place-items: center;
-    padding: 0 10%;
   }
 
   /* ******************** Footer ***************************** */
@@ -462,7 +461,6 @@ html::-webkit-scrollbar-thumb {
     width: 85%;
     text-align: center;
     font-size: 1.8rem;
-    
   }
 
   /* ******************** Program ***************************** */
@@ -512,7 +510,6 @@ html::-webkit-scrollbar-thumb {
     height: auto;
     padding: 4% 0;
     margin-top: 2rem;
-    
   }
 
   .partner ul li {
