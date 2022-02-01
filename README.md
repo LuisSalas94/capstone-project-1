@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project Name: SciComm 2022 
 
 > This is the final project of the CSS/HTML module. The web page is about Most Famous Scientific Disseminators of all times.
 > For this project I followed Cindy Shin's [template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
@@ -14,10 +14,11 @@
 
 ## Project's Sections
 - Header section
-- Headline section
+- Hero section
 - Program section
 - Featured Speakers section
 - Partners section
+- Footer section
 
 ## Live Demo 
 
