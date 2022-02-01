@@ -1,9 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project Name: SciComm 2022 
 
 > This is the final project of the CSS/HTML module. The web page is about Most Famous Scientific Disseminators of all times.
 > For this project I followed Cindy Shin's [template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+
+![Screenshot_1](https://user-images.githubusercontent.com/57297709/152021651-9fd1ccd6-2566-49fe-9965-b753f7cf86ff.jpg)
+![Screenshot_2](https://user-images.githubusercontent.com/57297709/152021701-b1bae030-3147-4e20-a663-e8817825921f.jpg)
+
+![Screenshot_3](https://user-images.githubusercontent.com/57297709/152021721-86844234-e7ca-4ecd-9b4f-80e09f25782f.jpg)
+
 
 
 ## Built With
@@ -14,18 +20,19 @@
 
 ## Project's Sections
 - Header section
-- Headline section
+- Hero section
 - Program section
 - Featured Speakers section
 - Partners section
+- Footer section
 
 ## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://luissalas94.github.io/capstone-project-1/)
 
 ## Video Link 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://www.loom.com/share/2619d70607b747eb9b07b78b2852b280)
 
 
 ## Author
