@@ -97,6 +97,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* ******************************** Media Queries *************************************** */
+@media screen and (max-height: 1200px) {
+  .speakers {
+    height: 120vh;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 58%;
@@ -117,7 +123,7 @@ html::-webkit-scrollbar-thumb {
   /* ******************** Program ***************************** */
 
   .program {
-    height: 75vh;
+    height: 85vh;
   }
 
   .program .row {
@@ -126,10 +132,12 @@ html::-webkit-scrollbar-thumb {
 
   /* ******************** Speakers ***************************** */
   .speakers {
-    height: 150vh;
+    height: 170vh;
+    background-color: var(--white-bg);
   }
 
   .speakers .row {
+    padding-top: 1rem;
     grid-template-columns: 1fr;
   }
 
@@ -154,7 +162,7 @@ html::-webkit-scrollbar-thumb {
 
   /* ******************************** About Conference *************** */
   .about-conference {
-    height: 95vh;
+    height: 100vh;
   }
 
   .box-container {
@@ -315,6 +323,11 @@ html::-webkit-scrollbar-thumb {
     font-size: 2rem;
   }
 
+  .footer .content-2 p {
+    display: none;
+    justify-content: center;
+  }
+
   .program .row .card p {
     width: 60%;
     font-size: 2rem;
@@ -331,6 +344,7 @@ html::-webkit-scrollbar-thumb {
     padding: 3rem 10rem;
     cursor: pointer;
     font-size: 2rem;
+    margin-top: 2.2rem;
     text-transform: capitalize;
   }
 
@@ -356,13 +370,13 @@ html::-webkit-scrollbar-thumb {
 
   /* ******************** Footer ***************************** */
   .footer {
-    height: 25vh;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    height: 15vh;
   }
 
-  /* ******************** About Hero ***************************** */
+  .footer .content-2 {
+    width: auto;
+  }
+
   .about-hero {
     height: 60vh;
   }
@@ -424,7 +438,7 @@ html::-webkit-scrollbar-thumb {
   /* ******************** Hero ***************************** */
   .hero {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     padding: 15rem 4%;
     align-items: flex-start;
     justify-content: center;
@@ -440,11 +454,11 @@ html::-webkit-scrollbar-thumb {
   }
 
   .hero .content h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .about-hero h2 {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
 
   .hero .content h2 {
@@ -457,17 +471,29 @@ html::-webkit-scrollbar-thumb {
   }
 
   .hero .content p {
-    width: 80%;
+    width: 85%;
+    text-align: center;
+    font-size: 1.8rem;
   }
 
   /* ******************** Program ***************************** */
   .program {
     width: 100%;
-    height: 82vh;
+    height: 100vh;
   }
 
   .program .row .card {
     width: 90%;
+  }
+
+  /* ******************** Footer ***************************** */
+
+  .footer .content-1 {
+    width: auto;
+  }
+
+  .footer .content-2 {
+    width: auto;
   }
 
   .footer .content-2 p {
@@ -519,19 +545,17 @@ html::-webkit-scrollbar-thumb {
   .footer {
     height: 15vh;
     text-align: center;
-    display: grid;
-    place-items: center;
   }
 
   /* ******************** About Hero ***************************** */
   .about-hero {
-    height: 65vh;
+    height: 75vh;
     width: 100%;
   }
 
   /* ******************** About Logo ***************************** */
   .about-logo {
-    height: 55vh;
+    height: 60vh;
   }
 
   /* ******************** About Conference ***************************** */
@@ -542,6 +566,38 @@ html::-webkit-scrollbar-thumb {
   .footer.about {
     background-color: var(--white);
     height: 15vh;
-    flex-direction: column;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .about-conference {
+    height: 120vh;
+  }
+
+  .about-conference .box1,
+  .about-conference .box2 {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .speakers .row .card {
+    width: 100%;
+  }
+
+  .speakers .row .card h1 {
+    font-size: 1.5rem;
+  }
+
+  .speakers .row .card p {
+    font-size: 1.2rem;
+  }
+
+  .speakers .row .card .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .partner ul li i {
+    font-size: 5rem;
   }
 }

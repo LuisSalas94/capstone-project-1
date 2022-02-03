@@ -8,16 +8,16 @@
 }
 
 .speakers .heading {
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 
 .speakers .row {
-  padding-top: 5rem;
   display: grid;
   place-items: center;
   justify-content: center;
   align-items: baseline;
-  gap: 5rem;
+  gap: 4rem;
+  padding: 2rem 5%;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -25,7 +25,7 @@
   width: 60rem;
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .speakers .row .card .image img {
